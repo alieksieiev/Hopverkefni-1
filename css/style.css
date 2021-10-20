@@ -9,7 +9,7 @@
 body {
   box-sizing: border-box;
   min-height: 100vh;
-  max-width: 1440px;
+  width: 100%;
 }
 
 /* og látum erfast á allt */
@@ -135,19 +135,37 @@ a {
 ul {
   display: flex;
   flex-direction: row;
-  width: 330px;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
 }
 
 li {
   list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navbar-top {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+
+.navbar-top-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 33%;
+}
+
+.container-header {
+  text-align: center;
+  height: 565px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/cables.jpg);
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
