@@ -168,4 +168,18 @@ li {
   clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
 }
 
+.container-ny-vorur {
+  display: flex;
+  align-items: center;
+  height: 520px;
+}
+
+.container-ny-vorur-left {
+  width: 50%;
+}
+
+.container-ny-vorur-right {
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */
