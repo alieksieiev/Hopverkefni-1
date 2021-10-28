@@ -173,6 +173,16 @@ li {
   display: flex;
   align-items: center;
   height: 520px;
+  max-width:1000px;
+  margin:0 auto;
+
+  button {
+    background-color: #6F4E37;
+    border-radius: 5px;
+    padding: 4px;
+    color:white;
+  }
+  
 }
 .container-ny-vorur-left{
   width: 50%;
