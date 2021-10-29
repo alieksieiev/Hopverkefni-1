@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reiknum stærð á öllum boxum sem border-box */
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* og látum erfast á allt */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  /* Hámarksbreidd á efni */
+  --max-width: 1400px;
+  --color-text: #000;
+  /* Letur stillingar */
+  --font-size: 16px;
+  --font-family-base: "Lato", arial, sans-serif;
+  --font-family-heading: "Lora", georgia, serif;
+}
+
+.container-header {
+    text-align: center;
+    height: 565px;
+    background-position: bottom;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 267px;
+}
+
