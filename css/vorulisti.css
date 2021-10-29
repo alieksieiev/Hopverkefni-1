@@ -111,6 +111,17 @@ p {
   border-radius: 5px;
   left: 5px;
   top: 5px;
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .container-header {
@@ -121,10 +132,46 @@ p {
     text-align: center;
 }
 
+.haesta {
+  position: static;
+  width: 105px;
+  height: 32px;
+  left: 5px;
+  top: 5px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.heiti {
+  position: static;
+  width: 43px;
+  height: 32px;
+  left: 5px;
+  top: 5px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
 .image-search {
   left: 420px;
   position: absolute;
   top: 10px;
+}
+
+.laegsta {
+  position: static;
+  width: 111px;
+  height: 32px;
+  left: 5px;
+  top: 5px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
 }
 
 li {
@@ -189,11 +236,28 @@ ul {
 /* Main */
 
 main {
-  height: 1238px;
-  left: 0px;
-  position: absolute;
-  top: 22px;
-  width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1em;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1em;
+} 
+
+.container div {
+  grid-column: span 1;
+  padding: 1rem;
 }
 
 /* Footer */
